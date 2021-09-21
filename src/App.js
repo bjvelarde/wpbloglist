@@ -4,8 +4,6 @@ import {
   Route
 } from "react-router-dom";
 import Post from './components/Post';
-import Header from './components/Header';
-import MainHero from './components/MainHero';
 import Footer from './components/Footer';
 import Articles from './components/Articles';
 import { Provider } from './context';
@@ -18,7 +16,6 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/">
-              <Header><MainHero /></Header>
               <Articles />
             </Route>
             <Route exact path="/post/:slug">

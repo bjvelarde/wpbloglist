@@ -27,16 +27,20 @@ const Category = styled.section`
   > h3 {
     font-weight: bold;
     font-size: 14px;
-
-    > span {
-      margin-right: 10px;
-      width: 12px;
-      height: 12px;
-      display: inline-block;
-      border-radius: 50%;
-      background-color: red;
-    }
   }
+`;
+
+const ColoredDot = styled.span`
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: ${props => props.color || "red"};
+`;
+
+const CategoryName = styled.span`
+  margin-right: 10px;
 `;
 
 const ImageBox = styled.div`
@@ -72,7 +76,9 @@ const SC = {
   Category,
   ImageBox,
   Title,
-  LastUpdate
+  LastUpdate,
+  ColoredDot,
+  CategoryName
 };
 
 export default SC;

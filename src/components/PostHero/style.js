@@ -6,7 +6,7 @@ const BannerContainer = styled.div`
   background-image: url(${props => props.banner || "/images/header-mobile.jpg"});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   background-position-y: 90px;
   background-attachment: fixed;
   min-height: 500px;

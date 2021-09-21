@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const BannerContainer = styled.div`
+  position: relative;
   padding-top: 45px;
   width: 100%;
   background-image: url("/images/header-mobile.jpg");
@@ -35,8 +36,17 @@ const BannerContainer = styled.div`
   }
 `;
 
+const Chevron = styled.div`
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 60px;
+  cursor: pointer;
+`;
+
 const SC = {
-  BannerContainer
+  BannerContainer,
+  Chevron
 };
 
 export default SC;
