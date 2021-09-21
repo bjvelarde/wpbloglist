@@ -11,7 +11,7 @@ const MainHero = ({ scrollTo }) => {
 
   return <SC.BannerContainer >
     <h1>The Truecaller Blog</h1>
-    <SC.Chevron onClick={executeScroll}>
+    <SC.Chevron onClick={executeScroll} data-testid="click-down">
       <FontAwesomeIcon icon={faChevronDown} size="3x" color="white"/>
     </SC.Chevron>
   </SC.BannerContainer>;

@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import Header from '../Header';
 import PostHero from '../PostHero';
+import Spinner from '../Spinner';
 import { useParams } from "react-router-dom";
 import { usePosts } from '../../context';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYinYang } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
 import SC from './style';
 
@@ -43,7 +42,7 @@ const Post = () => {
           <SC.Contents dangerouslySetInnerHTML={{__html: `${state.post.content}`}} />
         </SC.Container>
       </>
-    ) : <FontAwesomeIcon icon={faYinYang} spin size="3x" color="#1a425e"/> }
+    ) : <Spinner /> }
   </>;
 };
 

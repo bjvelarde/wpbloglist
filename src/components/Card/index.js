@@ -23,7 +23,9 @@ const COLORS = [
 ];
 
 const categoryNames = (categories) => {
-  return categories.map(cat => cat.name);
+  return categories ?
+    categories.map(cat => cat.name) :
+    [];
 };
 
 const Category = ({ category }) => {
@@ -53,7 +55,7 @@ const Card = ({ post }) => {
   }
 
   const showCategories = () => {
-    return Object.keys(categories).map(category => <Category category={category} />);
+    return Object.keys(categories).map(category => <Category key={category} category={category} />);
   }
 
   return <SC.Container>

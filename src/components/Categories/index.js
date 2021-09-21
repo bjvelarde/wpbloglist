@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { usePosts } from '../../context';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYinYang } from '@fortawesome/free-solid-svg-icons';
+import Spinner from '../Spinner';
 import { debounce } from 'lodash';
 import SC from './style';
 
@@ -33,11 +32,11 @@ const Categories = () => {
 
   return <SC.Container>
     {state.categories ? (
-      <SC.Select onChange={handleChange}>
+      <SC.Select title="categories" onChange={handleChange}>
         <option value="all">All Categories</option>
         {showOptions()}
       </SC.Select>
-    ) : <FontAwesomeIcon icon={faYinYang} spin color="#1a425e"/> }
+    ) : <Spinner size="1x" testid="load-categories"/> }
   </SC.Container>
 };
 

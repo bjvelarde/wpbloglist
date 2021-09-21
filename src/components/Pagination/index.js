@@ -37,7 +37,7 @@ const Pagination = props => {
 
   return (
     <SC.Container>
-      <SC.Navigation>
+      <SC.Navigation title="navigation">
         <SC.Item
           className={currentPage === 1 ? 'disabled' : ''}
           onClick={onPrevious}

@@ -4,9 +4,8 @@ import MainHero from '../MainHero';
 import Categories from '../Categories';
 import Card from '../Card';
 import Pagination from '../Pagination';
+import Spinner from '../Spinner';
 import { usePosts } from '../../context';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYinYang } from '@fortawesome/free-solid-svg-icons';
 import SC from './style';
 
 const Articles = () => {
@@ -42,7 +41,7 @@ const Articles = () => {
           </SC.Cards>
           <Pagination totalCount={state.data.found} />
         </>
-      ) : <FontAwesomeIcon icon={faYinYang} spin size="3x" color="#1a425e"/> }
+      ) : <Spinner /> }
     </SC.Container>
   </>;
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SC from './style';
 
 const Header = ({ children }) => {
-  return <header>
+  return <header title="banner">
     <Link to="/">
       <SC.LogoContainer>
         <SC.Logo src="/images/truecaller.svg" alt="logo" />
