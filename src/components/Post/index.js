@@ -26,7 +26,7 @@ const Post = () => {
           <PostHero banner={state.post.featured_image} />
         </Header>
         <SC.Container>
-          <SC.Title>{state.post.title}</SC.Title>
+          <SC.Title dangerouslySetInnerHTML={{__html: `${state.post.title}`}} />
           <SC.Author>
             <SC.Avatar>
               <img

@@ -43,7 +43,7 @@ const Card = ({ post }) => {
   const {
     slug,
     categories,
-    post_thumbnail,
+    post_thumbnail = {URL: 'https://dummyimage.com/600x400/000/fff'},
     title,
     date
   } = post;

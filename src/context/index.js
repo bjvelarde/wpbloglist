@@ -19,7 +19,7 @@ const postsReducer = (state, action) => {
     case ACTIONS.FETCH_POST:
       return {...state, post: action.payload};
     case ACTIONS.FILTER:
-      return {...state, category: action.payload};
+      return {...state, category: action.payload, page: 1};
     case ACTIONS.FETCH_CATEGORIES:
       return {...state, categories: action.payload};
     case ACTIONS.NAVIGATE:

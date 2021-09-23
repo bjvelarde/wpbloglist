@@ -12,6 +12,7 @@ const Categories = () => {
       return <option
         key={category.slug}
         value={category.slug}
+        selected={category.slug === state.category}
       >{category.name}</option>;
     });
   };

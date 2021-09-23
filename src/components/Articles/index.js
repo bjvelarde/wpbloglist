@@ -39,7 +39,7 @@ const Articles = () => {
           <SC.Cards>
             {showCards()}
           </SC.Cards>
-          <Pagination totalCount={state.data.found} />
+          <Pagination totalCount={state.data.found} currentPage={state.page} />
         </>
       ) : <Spinner /> }
     </SC.Container>
